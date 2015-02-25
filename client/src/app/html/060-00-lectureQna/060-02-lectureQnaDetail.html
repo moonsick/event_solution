@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>행사관리솔루션</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+		<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+		<!--script src="js/less-1.3.3.min.js"></script-->
+		<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap theme -->
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/f-solution.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo-lg.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo-lg.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo-lg.png">
+		<link rel="apple-touch-icon-precomposed" href="images/cione_fa.png">
+		<link rel="shortcut icon" href="images/logo-lg.png">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/respond.js"></script>
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>		
+		<!--header-->
+		<header class="navbar-fixed-top">
+		<nav class="navbar nav-header">
+			<ul class="list-inline list-unstyled">
+			<li class="col-xs-2 text-left"><a href="010-00-main.html" type="button" class="btn-main"><i class="fa fa-home"> </i></a></li>
+			<li class="col-xs-8"><h1 class="text-center">사용자 <small>님 환영합니다</small></h1></li>
+			<li class="col-xs-2 text-right"><a type="button" id="cm-menu" href="#common-menu" role="button" class="btn-main" data-toggle="modal"><i class="fa fa-bars"> </i></a>				
+			</li>			
+			</ul>
+		</nav>
+			
+		
+		
+		
+		
+		<!--header 끝-->
+		<div class="col-xs-12 banner-wrap">
+			<marquee>
+			<p>정보보호 기법 논문 발표 종합관 301호에서 진행합니다</p>
+			</marquee>
+		</div>
+		</header>
+	
+			<div class="container contents">
+			<table class="table table-striped detail-t">				
+					<tr>
+						<th style="width:64px;">
+							번호
+						</th>
+						<th>
+							10
+						</th>						
+					</tr>
+				
+					<tr>
+						<th>
+							질문자
+						</th>
+						<td>
+						김규식 교수
+						</td>						
+					</tr>
+					<tr>
+						<th>
+							내용
+						</th>
+						<td style="line-height:1.8;">
+						IOT 세대를 준비하는 대표 기업들의 준비하는 실제 사례 등이 있는지 알고 싶습니다
+						</td>						
+					</tr>					
+			</table>
+			 <a href="060-01-lectureQnaList.html"><button class="btn btn-search pull-right" type="button">목록</button></a>
+			 </div>
+		<footer class="navbar-fixed-bottom">
+			<div class="foot-wrap1">
+			<p class="col-xs-3">후원사</p>
+			<ul class="col-xs-9 list-unstyled list-inline">
+				<li><img src="images/logo0.png" alt="" class="img-responsive"></li>
+				<li>(주)ABC</li>
+				<li><img src="images/logo1.png" alt="" class="img-responsive"></li>
+				<li><img src="images/logo2.png" alt="" class="img-responsive"></li>
+			</ul>
+			</div>
+			<div class="foot-wrap2">
+			 <p class="text-center">COPYRIGHT © CI-ONE . ALL RIGHT RESERVED </p>
+			</div>
+		</footer>
+		
+		<!--메뉴모달-->
+			<div class="modal fade" id="common-menu" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content cm-modal">
+						<div class="modal-header cm-header">
+							 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title text-center" id="myModalLabel">
+								MENU
+							</h4>
+						</div>
+						<div class="modal-body m-menu-wrap2">
+							<div class="col-xs-4">
+								<a href="020-00-introduction.html"><button class="btn btn-block m-menu"> <i class="fa fa-mortar-board fa-3x"> </i><br>인사말 </button></a>
+							</div>
+							<div class="col-xs-4">
+								<a href="030-00-invitation.html"><button class="btn btn-block m-menu"> <i class="fa fa-envelope-o fa-3x"> </i><br>초대글 </button></a>
+							</div>
+							<div class="col-xs-4">
+								<a href="040-00-schedule.html"><button class="btn btn-block m-menu"><i class="fa fa-pie-chart fa-3x"> </i><br>일정표 </button></a>
+							</div>
+							<div class="col-xs-4">
+								<a href="050-00-lectureList.html"><button class="btn btn-block m-menu"><i class="fa fa-clipboard fa-3x"> </i><br>강의자료 </button></a>
+							</div>
+							<div class="col-xs-4">
+								<a href="060-00-lectureQna.html"><button class="btn btn-block m-menu"><i class="fa fa-comments fa-3x"> </i><br>강의QnA</button> </a>
+							</div>
+							<div class="col-xs-4">
+								<a href="070-00-surroundings.html"><button class="btn btn-block m-menu"><i class="fa fa-coffee fa-3x"> </i><br>주변안내 </button></a>
+							</div>
+						</div>						
+					</div>
+					
+				</div>
+				
+			</div>
+		<!--메뉴모달 끝-->
+		
+		
+		
+		
+	<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style")
+msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"))
+document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+		</script>
+	</body>
+</html>

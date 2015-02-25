@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+ *{font-family:'Nanum Gothic', sans-serif; }
+
+
+body {height:100%; padding:81px 0 74px; background:#E5E5E5;}
+.no-padding{padding-right:0; padding-left:0;}
+/*메뉴바*/
+.nav-header{background:#317686; font-size:12px; color:#cee1e5; min-height:36px; margin:0; box-shadow:0 2px 3px #222;}
+.nav-header>ul>li{padding:0;}
+.nav-header h1{font-size:20px; font-family:'Nanum Gothic', sans-serif; font-weight:900; padding-top:7px; margin:0;}
+.nav-header h1>small{color:#cee1e5; font-weight:bold;}
+.nav-header .btn-main{font-size:24px; color:#cee1e5; padding:8px 12px;}
+
+/*배너*/
+.banner-wrap{background:url('../../../assets/img/banner-bg.png') no-repeat 0 0; background-size:cover; padding:5px;}
+.banner-wrap marquee{background:rgba(30,69,74,0.4); width:100%; overflow:hidden;}
+.banner-wrap marquee p{margin:0; padding:10px; color:#fff; font-size:14px; font-weight:bold; width:700px;}
+
+/*메뉴모달*/
+.m-menu-wrap2{padding:0; background-color:#efefef; overflow:hidden;}
+.m-menu-wrap2 > .col-xs-4{padding:0;}
+.m-menu-wrap2 .m-menu{background:#efefef; border-radius:0; color:#a4a4a4; font-size:12px; font-weight:600; border-top:1px solid #f9f9f9; border-bottom:1px solid #e3e3e3; border-right:1px solid #e3e3e3;
+border-left:1px solid #f9f9f9; padding-top:19%; padding-bottom:19%;}
+.m-menu-wrap2 a:hover,.m-menu-wrap2 a:focus{text-decoration:none;}
+
+.m-menu-wrap2 .m-menu i{padding-bottom:7px;}
+.m-menu-wrap2 .m-menu:hover,.m-menu-wrap2 .m-menu:focus{background:#e3e3e3;}
+.cm-header{border-radius: 0; background:#7cb0bc; color:#fff; padding:8px;}
+.cm-header h4{font-size:16px;font-family:'Nanum Gothic', sans-serif; font-weight:600;}
+.cm-header .close{margin-top:0;}
+
+/*푸터*/
+.foot-wrap1{background:#cdcdcd; padding:8px 0; overflow:hidden;}
+.foot-wrap1 p.col-xs-3{color:#6e6e6e; font-weight:600; border-right:1px solid #999999; font-size:11px; padding-right:0; width:19%; margin:0;}
+.foot-wrap1 ul.col-xs-9{padding-right:0; margin:0; width:81%;}
+.foot-wrap1 ul li{padding-left:3px; padding-right:3px;}
+.foot-wrap1 ul li img{max-height:14px;}
+
+.foot-wrap2{background:#317686; font-size:10px; color:#e3e3e3; padding:12px 0;}
+.foot-wrap2 p{margin:0;}
+
+
+/*메인멘트*/
+.intro{background:url('../../../assets/img/main-bg.png') no-repeat 0 0; background-size:cover; padding:8.375%;}
+.intro>p{margin:0; line-height:1.95; font-size:14px; font-weight:600; color:#151d20;}
+
+/*메인메뉴버튼*/
+.m-menu-wrap{padding:0; background-color:#e5e5e5; overflow:hidden;}
+.m-menu-wrap > .col-xs-6{padding:0;}
+.m-menu-wrap .m-menu{background:#E5E5E5; border-radius:0; color:#6e6e6e; font-size:12px; font-weight:600; border-top:1px solid #f4f4f4; border-bottom:1px solid #c4c4c4; border-right:1px solid #c4c4c4;
+border-left:1px solid #f4f4f4; padding-top:12.25%; padding-bottom:12.25%;}
+.m-menu-wrap a:hover,.m-menu-wrap a:focus{text-decoration:none;}
+
+.m-menu-wrap .m-menu i{ color:#a4a4a4; padding-bottom:10px;}
+.m-menu-wrap .m-menu:hover,.m-menu-wrap .m-menu:focus{background:#d0d0d0;}
+
+.contents{margin:15px 0;}
+
+
+
+.lec-list-t{font-size:12px; color:#6d6e70; margin:0;}
+.lec-list-t>thead>tr>th{color:#5c5c5c; font-weight:600; padding-top:0; padding-bottom:5px; border-bottom: 2px solid #317686;}
+.lec-list-t>tbody>tr>td{border-bottom:1px solid #c4c4c4; padding:12px; }
+.lec-list-t td:last-child{}
+.lec-list-t td a{ color:#6d6e70;}
+.lec-list-t td a:hover{text-decoration:none; font-weight:bold;}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{background-color:#dde3e3;}
+
+.list-pages{width:133px; margin:5px auto; overflow:hidden; }
+.list-pages>li>a{background:none; color:#767676; font-weight:bold; border:0;}
+.list-pages>li>a:hover,.list-pages>li>a:focus{background:#5a9faf; color:#fff;}
+
+
+.f-search>.input-sm{height:27px; border:1px solid #5c9fb0; border-radius:0; background:#fafafa;}
+
+.btn-search{font-size:10px; background:#5c9fb0; color:#fff; border-radius: 0;}
+.btn-search:hover,.btn-search:focus{color:#fff; background:#4a8695;}
+
+.detail-t{border-top:2px solid #317686; font-size:12px; border-bottom:1px solid #c4c4c4;color:#6d6e70;}
+.detail-t tr td,.detail-t tr th{ border-top:1px solid #c4c4c4!important;}
+.detail-t tr td a{color:#317686; font-weight:bold;}
+.btn-search.pull-right,.btn-search.btn-block{font-size:12px;}
+a:hover,a:focus{text-decoration:none;}
+
+.order-btn{background: rgb(194,196,197); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(194,196,197,1) 0%, rgba(108,133,140,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(194,196,197,1)), color-stop(100%,rgba(108,133,140,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(194,196,197,1) 0%,rgba(108,133,140,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(194,196,197,1) 0%,rgba(108,133,140,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(194,196,197,1) 0%,rgba(108,133,140,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(194,196,197,1) 0%,rgba(108,133,140,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c4c5', endColorstr='#6c858c',GradientType=0 ); /* IE6-9 */
+color:#484848;  border-radius: 0; font-size:14px; font-weight:900; border:1px solid #6f8791; padding:5px 15px; margin-top:10px;
+}
+.order-btn i{font-size:20px;}
+.order-btn:hover{background:#6f878e;}
+
+.text-area{border-radius:0; border:1px solid #72a1ac; margin-top:10px; margin-bottom:10px;}
+
+.lecture-ol{margin:8px;}
+.lecture-ol li{padding:9px 12px; border:2px solid #bcd6dd; margin-bottom:8px; border-radius: 5px;}
+.lecture-ol li:hover{ border:2px solid #455d62;}
+.lecture-ol li a{font-size:13px; color:#1a383f; font-weight:900;}
+.lecture-ol li p{margin:0; color:#666666;}
+
+
+
+
+.guid{padding:15px 0; border-bottom:1px solid #cfcfcf; border-top:1px solid #f3f3f3; margin-top:0;}
+.guid a>img{border:1px solid #adadad;}
+.guid:first-child{border-top:0;}
+.guid .media-heading{font-family:'Nanum Gothic', sans-serif; font-size:14px; color:#767676; font-weight:600;}
+.guid .media-body{padding-left:6px; font-size:11px; color:#7f7f7f; line-height:1.75;}
+
+
+/*@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.intro{padding:20.375%;}
+.m-menu-wrap .m-menu{padding-top:20.25%; padding-bottom:20.25%;}	
+}
+@media (max-width: 767px) {
+	
+}*/
