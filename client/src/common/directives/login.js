@@ -20,9 +20,12 @@ angular.module('eventApp')
                     alert("등록되지 않는 카드 입니다");
                 }
                 else{
-                    alert($scope.item[0].name+"님 환영합니다")
+                    alert($scope.item[0].user_name+"님 환영합니다");
                     sessionStorage.setItem('aaa',1);
-                    sessionStorage.setItem('user',$scope.item[0].name);
+                    sessionStorage.setItem('user',$scope.item[0].user_name);
+                    sessionStorage.setItem('event_ID',$scope.item[0].event_ID);
+                    sessionStorage.setItem('user_ID',$scope.item[0].user_ID);
+                    sessionStorage.setItem('user_class_ID',$scope.item[0].user_class_ID);
                     location.reload();
                 }
 

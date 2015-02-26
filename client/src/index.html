@@ -37,16 +37,16 @@
 
 <div ng-if="!layout">
     <div ng-include="'src/app/html/080-00-login/080-00-login.html'"></div>
-    </div>
+</div>
 
 
 <div ng-if="layout">
-<div ng-include="'src/app/html/header-m.html'"></div>
-<!--<div class="container">-->
-<div>
-    <div ng-view=""></div>
-</div>
-<div ng-include="'src/app/html/footer-m.html'"></div>
+    <div ng-include="'src/app/html/header-m.html'"></div>
+    <!--<div class="container">-->
+    <div>
+        <div ng-view=""></div>
+    </div>
+    <div ng-include="'src/app/html/footer-m.html'"></div>
 </div>
 
 
@@ -65,21 +65,24 @@
 <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
 <script src="vendor/angular-route/angular-route.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <!--<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>-->
 
 
 <script src="vendor/services/angular-file-upload.min.js"></script>
 <script src="vendor/services/angular-file-upload-shim.js"></script>
 
+
 <script src="src/common/directives/app.js"></script>
+<script src="src/common/directives/dbConnectService.js"></script>
 <script src="src/common/directives/main.js"></script>
 <script src="src/common/directives/header.js"></script>
 <script src="src/common/directives/login.js"></script>
+<script src="src/common/directives/060-00-lectureQna.js"></script>
+<script src="src/common/directives/060-01-lectureQnaList.js"></script>
 
-<script src="src/app/html/060-00-lectureQna/060-00-lectureQna.js"></script>
 
 
-<script src="src/common/directives/dbConnectService.js"></script>
 <!--<script src="vendor/services/dbConnectService.js"></script>-->
 
 <script src="vendor/jquery/dist/jquery.js"></script>

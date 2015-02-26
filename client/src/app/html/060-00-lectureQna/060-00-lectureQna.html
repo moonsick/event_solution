@@ -1,15 +1,18 @@
-
+<div ng-controller="lectureQna">
 
 		<div class="container contents">			
 			<div class="col-xs-12 no-padding">
 			<a type="button" class="btn btn-block order-btn" id="lecture-order" href="#m-lecture-order" data-toggle="modal">강의 순서 <i class="fa fa-caret-down pull-right"> </i></a>
 			</div>	
 			<div class="col-xs-12 no-padding">
-			<textarea class="form-control text-area" rows="12" placeholder="질문하실 내용을 작성하시고 전송 버튼을 누르시면 작성하신 내용은 강연자에게 보여집니다"></textarea>
+			<textarea class="form-control text-area" rows="12" placeholder="질문하실 내용을 작성하시고 전송 버튼을 누르시면 작성하신 내용은 강연자에게 보여집니다" ng-model="write_qna"></textarea>
 			</div>
 			<div class="col-xs-12">
-			 <a href="#"><button class="btn btn-block btn-search" type="button">전 송</button></a>
+			 <a href=""><button class="btn btn-block btn-search" type="button" ng-click="insert_qna()">전 송</button></a>
+
+			 <a href="" ng-if="list_view"><button class="btn btn-block btn-search" type="button" ng-click="qna_list()" style="margin-top: 10px;">질문 목록</button></a>
 			</div>
+
 		</div>
 
 		
@@ -24,10 +27,11 @@
 							</h4>
 						</div>
 						<div class="modal-body m-menu-wrap2">
-							<ol class="list-unstyled lecture-ol">
-								<li><a href="#">1강의. 빅데이터와 미래<p>가나대학교 컴퓨터공학과 박순규 교수</p></a></li>
-								<li><a href="#">2강의. IOT 와 2015년 동향<p>미래 대학교 정보통신학과 한지만 교수</p></a></li>
-								<li><a href="#">3강의. 미래지향적 웨어러블 컴퓨팅<p>한국대학교 소프트웨어공학과 최영락 교수</p></a></li>								
+							<ol class="list-unstyled lecture-ol" ng-repeat="list in item">
+								<a href="" data-dismiss="modal" ng-click="list_click($index)"><li>{{$index+1}}강의. {{list.lecture}}<p>{{list.user_party}} {{list.teacher_name}}</p></li></a>
+								<!--<li><a href="" data-dismiss="modal">1강의. 빅데이터와 미래<p>가나대학교 컴퓨터공학과 박순규 교수</p></a></li>
+								<li><a href="">2강의. IOT 와 2015년 동향<p>미래 대학교 정보통신학과 한지만 교수</p></a></li>-->
+								<!--<a href="" data-dismiss="modal"><li>3강의. 미래지향적 웨어러블 컴퓨팅<p>한국대학교 소프트웨어공학과 최영락 교수</p></li></a>-->
 								</ol>
 						</div>					
 					</div>
@@ -35,6 +39,9 @@
 				</div>
 				
 			</div>
+
+
+		</div>
 		<!--강의순서모달-->
 		
 		

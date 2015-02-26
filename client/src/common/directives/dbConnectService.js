@@ -5,7 +5,7 @@ angular.module('eventApp')
 
 
 
-
+//로그인
         executeResults.login_go = function (nfcNumber) {
             var deferred = $q.defer();
             $http({
@@ -19,6 +19,79 @@ angular.module('eventApp')
             );
             return deferred.promise;
         };
+
+
+
+// 강의 목록 불러오기
+        executeResults.lecture_Order = function () {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/lecture_Order'
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
+
+
+
+
+
+// 강의 질문 등록 하기
+        executeResults.insert_qna = function (event_ID,user_class_ID,user_ID,schedule_ID,write_qna) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/insert_qna',
+                    data: {event_ID: event_ID , user_class_ID: user_class_ID , user_ID: user_ID , schedule_ID: schedule_ID, write_qna: write_qna}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
+
+
+
+
+
+// 강의 질문 list
+        executeResults.list_qna = function (event_ID,user_class_ID,user_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/list_qna',
+                    data: {event_ID: event_ID , user_class_ID: user_class_ID , user_ID: user_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

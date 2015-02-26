@@ -18,5 +18,5 @@ angular.module('eventApp')
 var logout = function(){
     console.log("aaaaddd");
     sessionStorage.setItem('aaa',2);
-    location.reload();
+    location.href = "/";
 }

@@ -5,6 +5,7 @@ var app = angular.module('eventApp', [
     'angularFileUpload',
     'LocalStorageModule',
     'angular-storage',
+    'ui.bootstrap',
     'ngCookies'
 ]);
 app.config(function ($routeProvider, $locationProvider) {
