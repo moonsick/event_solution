@@ -5,7 +5,7 @@
 							번호
 						</th>
 						<th>
-							10
+							{{item[0].lecture_ID}}
 						</th>						
 					</tr>
 				
@@ -14,7 +14,7 @@
 							강의자료
 						</th>
 						<td>
-						IOT 세대를 준비하는 대표 기업들...
+						{{item[0].lecture_title}}
 						</td>						
 					</tr>
 					<tr>
@@ -22,7 +22,7 @@
 							첨부파일
 						</th>
 						<td>
-						<a href="#">IOT 세대를 준비하는 대표 기업들.pdf</a>
+						<a target="_self" href="src/files/{{item[0].lecture_file}}">{{item[0].lecture_file}}</a>
 						</td>							
 					</tr>
 			</table>

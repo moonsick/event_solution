@@ -117,6 +117,50 @@ angular.module('eventApp')
 
 
 
+// 강의 자료 detail
+        executeResults.detail_lecture = function (lecture_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/detail_lecture',
+                    data:{lecture_ID: lecture_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,9 +13,15 @@ body {height:100%; padding:81px 0 74px; background:#E5E5E5;}
 .nav-header .btn-main{font-size:24px; color:#cee1e5; padding:8px 12px;}
 
 /*배너*/
-.banner-wrap{background:url('../../../assets/img/banner-bg.png') no-repeat 0 0; background-size:cover; padding:5px;}
-.banner-wrap marquee{background:rgba(30,69,74,0.4); width:100%; overflow:hidden;}
-.banner-wrap marquee p{margin:0; padding:10px; color:#fff; font-size:14px; font-weight:bold; width:700px;}
+.banner-wrap{
+
+    background:url('../../../assets/img/banner-bg.png') no-repeat 0 0; background-size:cover; padding:5px;
+
+}
+
+.banner-wrap .ppp{background:rgba(30,69,74,0.4); width:100%; overflow:hidden;}
+.banner-wrap p{margin:0; padding:10px; color:#fff; font-size:14px; font-weight:bold;}
+
 
 /*메뉴모달*/
 .m-menu-wrap2{padding:0; background-color:#efefef; overflow:hidden;}
@@ -114,7 +120,7 @@ color:#484848;  border-radius: 0; font-size:14px; font-weight:900; border:1px so
 .guid .media-heading{font-family:'Nanum Gothic', sans-serif; font-size:14px; color:#767676; font-weight:600;}
 .guid .media-body{padding-left:6px; font-size:11px; color:#7f7f7f; line-height:1.75;}
 
-
+#logout a{color:#fff;}
 /*@media (min-width: 992px) and (max-width: 1200px) {
 }
 

@@ -1,4 +1,4 @@
-<footer class="navbar-fixed-bottom">
+<footer class="navbar-fixed-bottom" ng-controller="footer">
     <div class="foot-wrap1">
         <p class="col-xs-3">후원사</p>
         <ul class="col-xs-9 list-unstyled list-inline">
@@ -11,6 +11,8 @@
     </div>
     <div class="foot-wrap2">
         <p class="text-center">COPYRIGHT © CI-ONE . ALL RIGHT RESERVED </p>
+        <button class="pull-right" style="margin-top:-15px; margin-right:15px; font-size:12px; font-weight:bold;" ng-if="!logout" ng-click="logout1();">로그아웃</button>
+
     </div>
 </footer>
 
