@@ -13,9 +13,9 @@ app.config(function ($routeProvider, $locationProvider) {
             .when('/', {
                 templateUrl: '/src/app/html/010-00-main/010-00-main.html'
             })
-            .when('/kang', {
+            /*.when('/kang', {
                 redirectTo: '/'
-            })
+            })*/
             .when('/introduction', {
                 templateUrl: '/src/app/html/020-00-introduction/020-00-introduction.html'
             })
@@ -29,7 +29,7 @@ app.config(function ($routeProvider, $locationProvider) {
                 templateUrl: '/src/app/html/050-00-lecture/050-00-lectureList.html'
             })
             .when('/lectureDetail', {
-                templateUrl: '/src/app/html/050-00-lecture/050-00-lectureDetail.html'
+                templateUrl: '/src/app/html/050-00-lecture/050-01-lectureDetail.html'
             })
             .when('/lectureQna', {
                 templateUrl: '/src/app/html/060-00-lectureQna/060-00-lectureQna.html'
@@ -40,7 +40,7 @@ app.config(function ($routeProvider, $locationProvider) {
             .when('/lectureQnaDetail', {
                 templateUrl: '/src/app/html/060-00-lectureQna/060-02-lectureQnaDetail.html'
             })
-            .when('/070-00-surroundings', {
+            .when('/surroundings', {
                 templateUrl: '/src/app/html/070-00-surroundings/070-00-surroundings.html'
             })
             .otherwise({

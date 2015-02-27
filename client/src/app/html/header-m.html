@@ -15,9 +15,11 @@
     </nav>
 
     <div class="col-xs-12 banner-wrap">
-        <marquee>
+        <div>
+        <marquee behavior="scroll" width="100%">
             <p>정보보호 기법 논문 발표 종합관 301호에서 진행합니다</p>
         </marquee>
+        </div>
     </div>
 </header>
 
@@ -33,22 +35,22 @@
             </div>
             <div class="modal-body m-menu-wrap2">
                 <div class="col-xs-4">
-                    <a href="020-00-introduction.html"><button class="btn btn-block m-menu"> <i class="fa fa-mortar-board fa-3x"> </i><br>인사말 </button></a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="introduction();"> <i class="fa fa-mortar-board fa-3x"> </i><br>인사말 </button>
                 </div>
                 <div class="col-xs-4">
-                    <a href="030-00-invitation.html"><button class="btn btn-block m-menu"> <i class="fa fa-envelope-o fa-3x"> </i><br>초대글 </button></a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="invitation();"> <i class="fa fa-envelope-o fa-3x"> </i><br>초대글 </button>
                 </div>
                 <div class="col-xs-4">
-                    <a href="040-00-schedule.html"><button class="btn btn-block m-menu"><i class="fa fa-pie-chart fa-3x"> </i><br>일정표 </button></a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="schedule();"><i class="fa fa-pie-chart fa-3x"> </i><br>일정표 </button>
                 </div>
                 <div class="col-xs-4">
-                    <a href="050-00-lectureList.html"><button class="btn btn-block m-menu"><i class="fa fa-clipboard fa-3x"> </i><br>강의자료 </button></a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="lectureList();"><i class="fa fa-clipboard fa-3x"> </i><br>강의자료 </button>
                 </div>
                 <div class="col-xs-4">
-                    <a href="060-00-lectureQna.html"><button class="btn btn-block m-menu"><i class="fa fa-comments fa-3x"> </i><br>강의QnA</button> </a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="lectureQna();"><i class="fa fa-comments fa-3x"> </i><br>강의QnA</button>
                 </div>
                 <div class="col-xs-4">
-                    <a href="070-00-surroundings.html"><button class="btn btn-block m-menu"><i class="fa fa-coffee fa-3x"> </i><br>주변안내 </button></a>
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="surroundings();"><i class="fa fa-coffee fa-3x"> </i><br>주변안내 </button>
                 </div>
             </div>
         </div>

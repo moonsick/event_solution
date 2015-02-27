@@ -41,12 +41,12 @@ angular.module('eventApp')
 
 
 // 강의 질문 등록 하기
-        executeResults.insert_qna = function (event_ID,user_class_ID,user_ID,schedule_ID,write_qna) {
+        executeResults.insert_qna = function (event_ID,user_class_ID,user_ID,schedule_ID,write_qna,user_name,NFC_LID) {
             var deferred = $q.defer();
             $http({
                     method: 'post',
                     url: '/insert_qna',
-                    data: {event_ID: event_ID , user_class_ID: user_class_ID , user_ID: user_ID , schedule_ID: schedule_ID, write_qna: write_qna}
+                    data: {event_ID: event_ID , user_class_ID: user_class_ID , user_ID: user_ID , schedule_ID: schedule_ID, write_qna: write_qna, user_name: user_name, NFC_LID: NFC_LID}
                 }
             ).success(function (data) {
                     deferred.resolve(data.sending);
@@ -80,12 +80,37 @@ angular.module('eventApp')
 
 
 
+// 강의 질문 detail
+        executeResults.detail_qna = function (event_ID,user_class_ID,user_ID,schedule_ID,QNA_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/detail_qna',
+                    data: {event_ID: event_ID , user_class_ID: user_class_ID , user_ID: user_ID, schedule_ID: schedule_ID, QNA_ID: QNA_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
 
 
 
 
-
-
+// 강의 자료 list
+        executeResults.lectureList = function () {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/lectureList'
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
 
 
 

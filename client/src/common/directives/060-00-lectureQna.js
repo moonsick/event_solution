@@ -45,7 +45,7 @@ angular.module('eventApp')
                     alert("질문을 작성해 주세요");
                 }
                 else{
-                    executeResults.insert_qna($scope.event_ID,$scope.user_class_ID,$scope.user_ID,$scope.schedule_ID,$scope.write_qna).then(function(data) {
+                    executeResults.insert_qna($scope.event_ID,$scope.user_class_ID,$scope.user_ID,$scope.schedule_ID,$scope.write_qna,sessionStorage.getItem('user'),sessionStorage.getItem('NFC_LID')).then(function(data) {
                         $scope.insert_qna = data;
                         location.reload();
                     });

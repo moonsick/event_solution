@@ -23,6 +23,7 @@ angular.module('eventApp')
                     alert($scope.item[0].user_name+"님 환영합니다");
                     sessionStorage.setItem('aaa',1);
                     sessionStorage.setItem('user',$scope.item[0].user_name);
+                    sessionStorage.setItem('NFC_LID',$scope.item[0].NFC_LID);
                     sessionStorage.setItem('event_ID',$scope.item[0].event_ID);
                     sessionStorage.setItem('user_ID',$scope.item[0].user_ID);
                     sessionStorage.setItem('user_class_ID',$scope.item[0].user_class_ID);
