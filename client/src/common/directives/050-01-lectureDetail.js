@@ -14,12 +14,6 @@ angular.module('eventApp')
         $scope.lecture_ID= getValue[0].split('='); //키와 값분리
 
 
-        $scope.down=function(){
-
-            $location.url('/src/files/store.apk');
-
-        }
-
         executeResults.detail_lecture($scope.lecture_ID[1]).then(function(data) {
             $scope.item = data;
         });

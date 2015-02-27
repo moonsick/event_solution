@@ -23,11 +23,12 @@ angular.module('eventApp')
 
 
 // 강의 목록 불러오기
-        executeResults.lecture_Order = function () {
+        executeResults.lecture_Order = function (event_ID) {
             var deferred = $q.defer();
             $http({
                     method: 'post',
-                    url: '/lecture_Order'
+                    url: '/lecture_Order',
+                    data:{event_ID: event_ID}
                 }
             ).success(function (data) {
                     deferred.resolve(data.sending);
@@ -99,11 +100,12 @@ angular.module('eventApp')
 
 
 // 강의 자료 list
-        executeResults.lectureList = function () {
+        executeResults.lectureList = function (event_ID) {
             var deferred = $q.defer();
             $http({
                     method: 'post',
-                    url: '/lectureList'
+                    url: '/lectureList',
+                    data: {event_ID: event_ID}
                 }
             ).success(function (data) {
                     deferred.resolve(data.sending);
@@ -134,17 +136,54 @@ angular.module('eventApp')
 
 
 
+// 주변 정보 list
+
+        executeResults.turisme = function (event_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/turisme',
+                    data:{event_ID: event_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
+
+
+//인사말,초대글,일정표 그림 출력
+        executeResults.information = function (event_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/information',
+                    data: {event_ID: event_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
 
 
 
-
-
-
-
-
-
-
-
+// top 움직이는 공지사항
+        executeResults.notice_D = function (event_ID) {
+            var deferred = $q.defer();
+            $http({
+                    method: 'post',
+                    url: '/notice_D',
+                    data: {event_ID: event_ID}
+                }
+            ).success(function (data) {
+                    deferred.resolve(data.sending);
+                }
+            );
+            return deferred.promise;
+        };
 
 
 

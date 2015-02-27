@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('eventApp')
-    .controller('header', function ($scope, $http, $route, $rootScope,localStorageService, $location) {
+    .controller('header', function ($scope,executeResults, $http, $route, $rootScope,localStorageService, $location) {
 
 
         $scope.user =sessionStorage.getItem('user');
@@ -25,6 +25,11 @@ angular.module('eventApp')
             location.href = "/surroundings";
         };
 
+
+        executeResults.notice_D(sessionStorage.getItem('event_ID')).then(function(data) {
+            $scope.item123 = data;
+            console.log($scope.item123);
+        });
 
 
     });

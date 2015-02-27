@@ -1,39 +1,13 @@
 
 		<!--컨텐츠-->
-		<div class="container contents">
-			<div class="media guid">
-						 <a href="#" class="col-xs-4 no-padding"><img src="src/assets/img/wall-panel-416041_1280.jpg" class="media-object img-responsive" alt='' /></a>
+		<div class="container contents" ng-controller="surroundings">
+			<div class="media guid" ng-repeat="item in item">
+						 <a href="#" class="col-xs-4 no-padding"><img src="src/files/5/turisme/{{item.info_img_file}}" class="media-object img-responsive" alt='' /></a>
 						<div class="media-body col-xs-8 no-padding">
 							<h4 class="media-heading">
-								국제 가구 박람회
-							</h4> 가장 큰 관심을 보이고 있는 서울 지부 특별 전시전으로 국내외 많은 아티스트들이 함께하여 더욱더 풍성….
+								{{item.info_title}}
+							</h4> {{item.info_comment}}
 						</div>
 					</div>
-			<div class="media guid">
-						 <a href="#" class="col-xs-4 no-padding"><img src="src/assets/img/couch-447484_1280.jpg" class="media-object img-responsive" alt='' /></a>
-						<div class="media-body col-xs-8 no-padding">
-							<h4 class="media-heading">
-								디자인페어
-							</h4> 가장 큰 관심을 보이고 있는 서울 지부 특별 전시전으로 국내외 많은 아티스트들이 함께하여 더욱더 풍성….
-						</div>
-					</div>
-			<div class="media guid">
-						 <a href="#" class="col-xs-4 no-padding"><img src="src/assets/img/home-office-336373.jpg" class="media-object img-responsive" alt='' /></a>
-						<div class="media-body col-xs-8 no-padding">
-							<h4 class="media-heading">
-								야외 카페
-							</h4> 가장 큰 관심을 보이고 있는 서울 지부 특별 전시전으로 국내외 많은 아티스트들이 함께하여 더욱더 풍성….
-						</div>
-					</div>
-			<div class="media guid">
-						 <a href="#" class="col-xs-4 no-padding"><img src="src/assets/img/restaurant-449952_1280.jpg" class="media-object img-responsive" alt='' /></a>
-						<div class="media-body col-xs-8 no-padding">
-							<h4 class="media-heading">
-								고급 레스토랑
-							</h4> 가장 큰 관심을 보이고 있는 서울 지부 특별 전시전으로 국내외 많은 아티스트들이 함께하여 더욱더 풍성….
-						</div>
-					</div>
-			
-			
 		</div>
 		<!--컨텐츠 끝-->
