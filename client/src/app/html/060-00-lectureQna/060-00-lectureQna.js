@@ -2,8 +2,7 @@
 
 angular.module('eventApp')
     .controller('lectureQna', function ($scope,executeResults ,$http, $route, $rootScope, $location ,$routeParams) {
-
-
+        
 
         if(sessionStorage.getItem('user_class_ID')==1){
             $rootScope.list_view = true;
@@ -33,7 +32,7 @@ angular.module('eventApp')
             $scope.user_class_ID = $scope.item[i].user_class_ID;
             $scope.user_ID = $scope.item[i].user_ID;
             $scope.schedule_ID = $scope.item[i].schedule_ID;
-        }
+        };
 
 
         $scope.insert_qna = function(){
@@ -61,12 +60,11 @@ angular.module('eventApp')
 
                 }
             }
-        }
+        };
 
 
         $scope.qna_list = function(){
             $location.url('/lectureQnaList');
-        }
-
+        };
 
     });

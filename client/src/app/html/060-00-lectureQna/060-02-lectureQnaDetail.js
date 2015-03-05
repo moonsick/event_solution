@@ -19,9 +19,16 @@ angular.module('eventApp')
         $scope.QNA_ID = getValue[1].split('='); //키와 값분리
 
 
+
+
+
+
         executeResults.detail_qna($scope.event_ID,$scope.user_class_ID,$scope.user_ID,$scope.schedule_ID[1],$scope.QNA_ID[1]).then(function(data) {
             $scope.item = data;
 
+            $scope.item[0].QNA_comment = $scope.item[0].QNA_comment.replace(/\n/gi,"<br>");
+
+            $("#QNA_comment").append($scope.item[0].QNA_comment);
 
 
         });
