@@ -24,6 +24,10 @@ angular.module('eventApp')
         $scope.surroundings = function(){
             location.href = "/surroundings";
         };
+        $scope.question = function(){
+            location.href = "/question1";
+        };
+
 
 
         executeResults.notice_D(sessionStorage.getItem('event_ID')).then(function(data) {

@@ -14,11 +14,8 @@ body {height:100%; padding:81px 0 74px; background:#E5E5E5;}
 
 /*배너*/
 .banner-wrap{
-
     background:url('../../../assets/img/banner-bg.png') no-repeat 0 0; background-size:cover; padding:5px;
-
 }
-
 .banner-wrap .ppp{background:rgba(30,69,74,0.4); width:100%; overflow:hidden;}
 .banner-wrap p{margin:0; padding:10px; color:#fff; font-size:14px; font-weight:bold;}
 
@@ -120,7 +117,26 @@ color:#484848;  border-radius: 0; font-size:14px; font-weight:900; border:1px so
 .guid .media-heading{font-family:'Nanum Gothic', sans-serif; font-size:14px; color:#767676; font-weight:600;}
 .guid .media-body{padding-left:6px; font-size:11px; color:#7f7f7f; line-height:1.75;}
 
-#logout a{color:#fff;}
+
+/*설문조사*/
+.text-box{padding:10px; background:#f2f2f2; border:1px solid #b6b6b6; color:#6e6e6e; font-size:11px;}
+.ques-title{color:#6e6e6e; font-weight:bold; font-size:13px; margin-top:5px; margin-bottom:5px;}
+
+
+/*설문조사01*/
+.ques-tb>thead>tr>th{padding:0px; font-weight:600; font-size:11px;}
+
+.ques-tb2{height:250px; overflow-y:scroll; margin-bottom:15px;}
+.ques-tb2 .lec-list-t>tbody>tr>td{padding:10px;}
+.ques-tb2 input[type="radio"], .ques-tb2 input[type="checkbox"]{margin-top:0;}
+
+
+/*설문조사02*/
+.dl-ques{font-size:11px; color:#6e6e6e;}
+.dl-ques dt{margin-top:10px; margin-bottom:5px;}
+.dl-ques dd{padding-left:10px; font-weight:200;}
+.btn-hidden{color:#efefef !important;}
+.btn-hidden:hover, .btn-hidden:focus{color:#e3e3e3 !important;}
 /*@media (min-width: 992px) and (max-width: 1200px) {
 }
 

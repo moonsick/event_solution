@@ -5,7 +5,7 @@
     <nav class="navbar nav-header">
         <ul class="list-inline list-unstyled">
             <li class="col-xs-2 text-left"><a href="010-00-main.html" type="button" class="btn-main"><i class="fa fa-home"> </i></a></li>
-            <li class="col-xs-6"><h1 class="text-center">{{user}} <small>님 환영합니다</small></h1> </li>
+            <li class="col-xs-8"><h1 class="text-center">{{user}} <small>님 환영합니다</small></h1> </li>
             <li class="col-xs-2 pull-right" style="width:46px;"><a type="button" id="cm-menu" href="#common-menu" role="button" class="btn-main" data-toggle="modal"><i class="fa fa-bars"> </i></a>
 
             </li>
@@ -56,6 +56,16 @@
                 <div class="col-xs-4">
                     <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="surroundings();"><i class="fa fa-coffee fa-3x"> </i><br>주변안내 </button>
                 </div>
+                <div class="col-xs-4">
+                    <button data-dismiss="modal" class="btn btn-block m-menu" ng-click="question();"><i class="fa fa-file-text-o fa-3x"> </i><br>설문조사 </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-block m-menu btn-hidden"><i class="fa fa-file-text-o fa-3x"> </i><br>공란 </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-block m-menu btn-hidden"><i class="fa fa-file-text-o fa-3x"> </i><br>공란 </button>
+                </div>
+
             </div>
         </div>
 

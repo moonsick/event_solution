@@ -2,7 +2,7 @@
 
 angular.module('eventApp')
     .controller('lectureQna', function ($scope,executeResults ,$http, $route, $rootScope, $location ,$routeParams) {
-        
+
 
         if(sessionStorage.getItem('user_class_ID')==1){
             $rootScope.list_view = true;

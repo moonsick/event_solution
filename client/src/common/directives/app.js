@@ -43,6 +43,15 @@ app.config(function ($routeProvider, $locationProvider) {
             .when('/surroundings', {
                 templateUrl: '/src/app/html/070-00-surroundings/070-00-surroundings.html'
             })
+            .when('/question0', {
+                templateUrl: '/src/app/html/090-00-question/090-00-question.html'
+            })
+            .when('/question1', {
+                templateUrl: '/src/app/html/090-00-question/090-01-question.html'
+            })
+            .when('/question2', {
+                templateUrl: '/src/app/html/090-00-question/090-02-question.html'
+            })
             .otherwise({
                 redirectTo: '/'
             });
